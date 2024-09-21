@@ -8,7 +8,7 @@ import redis
 def install_libs():
     # update pip
     os.system('python -m pip install --upgrade pip')
-    libs = 'pyautogui keyboard undetected_chromedriver pillow numpy opencv-python pandas'
+    libs = 'pyautogui keyboard undetected_chromedriver pillow numpy opencv-python pandas requests redis'
     os.system(f'python -m pip install {libs}')
 
 def get_code_from_redis(redis_key, r):
