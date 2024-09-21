@@ -1,14 +1,22 @@
 import socket
 import json
 import os
-import requests
 import time
-import redis
-
+try:
+    import redis
+except:
+    os.system('pip install redis')
+    import redis
+try:
+    import requests
+except:
+    os.system('pip install requests')
+    import requests
+    
 def install_libs():
     # update pip
     os.system('python -m pip install --upgrade pip')
-    libs = 'pyautogui keyboard undetected_chromedriver pillow numpy opencv-python pandas requests redis'
+    libs = 'pyautogui keyboard undetected_chromedriver pillow numpy opencv-python pandas'
     os.system(f'python -m pip install {libs}')
 
 def get_code_from_redis(redis_key, r):
