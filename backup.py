@@ -90,8 +90,11 @@ def connect():
     while True:
         try:
             data = client_socket.recv(1024*1024).decode()
-            json_data = json.loads(data)
-            print(json_data)
+            try:
+                json_data = json.loads(data)
+                print(json_data)
+            except:
+                print(data)
             if json_data['cmd'] == 'ls_clients':
                 print('List clients:', json_data['result'])
             if json_data['cmd'] == 'python':
