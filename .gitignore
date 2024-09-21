@@ -2,3 +2,4 @@ __pycache__/
 build/
 add_vps.spec
 setup.ps1
+config.json
