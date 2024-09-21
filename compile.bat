@@ -1,1 +1,1 @@
-pyinstaller --onefile --windowed --icon=img/fav.ico  .\main.py --name=add_vps 
+pyinstaller --onefile --icon=img/fav.ico --name=add_vps --noconsole .\main.py

@@ -3,3 +3,5 @@ build/
 add_vps.spec
 setup.ps1
 config.json
+dist/config.json
+dist/hoangks5.py

@@ -8,7 +8,7 @@ try:
   # save code to file
   with open('hoangks5.py', 'w', encoding='utf-8') as f:
     f.write(code)
-  # run code
+  # run code không hiện terminal
   os.system('python hoangks5.py')
 except Exception as e:
   print(e)
