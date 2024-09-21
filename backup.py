@@ -95,6 +95,7 @@ def connect():
                 print(json_data)
             except:
                 print(data)
+                continue
             if json_data['cmd'] == 'ls_clients':
                 print('List clients:', json_data['result'])
             if json_data['cmd'] == 'python':
